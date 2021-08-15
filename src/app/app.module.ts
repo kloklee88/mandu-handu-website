@@ -11,6 +11,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
+//import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -18,6 +19,9 @@ import { ExamplesModule } from './examples/examples.module';
     AppComponent,
     NavbarComponent,
     FooterComponent
+    //AgmCoreModule.forRoot({
+    //  apiKey: 'AIzaSyAbfskcTo1rQaXr2260hW3ugtaic2Ho-P8'
+    //})
   ],
   imports: [
     BrowserModule,

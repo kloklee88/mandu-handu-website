@@ -12,20 +12,38 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 })
 
 export class ComponentsComponent implements OnInit {
+    data: Date = new Date();
+
+    // google maps zoom level
+    zoom: number = 4;
+
+    // initial center position for the map
+    lat: number = 38.9072;
+    lng: number = -77.0369;
+    markers: marker[] = [
+        {
+            lat: 39.1073,
+            lng: -76.5711,
+            label: 'MH',
+            name: 'Mandu Handu',
+            draggable: false
+        }
+    ];
+
     page = 4;
     page1 = 5;
     focus;
     focus1;
     focus2;
-    date: {year: number, month: number};
+    date: { year: number, month: number };
     model: NgbDateStruct;
-    constructor( private renderer : Renderer2) {}
+    constructor(private renderer: Renderer2) { }
     isWeekend(date: NgbDateStruct) {
         const d = new Date(date.year, date.month - 1, date.day);
         return d.getDay() === 0 || d.getDay() === 6;
     }
 
-    isDisabled(date: NgbDateStruct, current: {month: number}) {
+    isDisabled(date: NgbDateStruct, current: { month: number }) {
         return date.month !== current.month;
     }
 
@@ -33,13 +51,21 @@ export class ComponentsComponent implements OnInit {
         let input_group_focus = document.getElementsByClassName('form-control');
         let input_group = document.getElementsByClassName('input-group');
         for (let i = 0; i < input_group.length; i++) {
-            input_group[i].children[0].addEventListener('focus', function (){
+            input_group[i].children[0].addEventListener('focus', function () {
                 input_group[i].classList.add('input-group-focus');
             });
-            input_group[i].children[0].addEventListener('blur', function (){
+            input_group[i].children[0].addEventListener('blur', function () {
                 input_group[i].classList.remove('input-group-focus');
             });
         }
     }
 
+}
+
+interface marker {
+    lat: number;
+    lng: number;
+    label?: string;
+    name: string;
+    draggable: boolean;
 }
