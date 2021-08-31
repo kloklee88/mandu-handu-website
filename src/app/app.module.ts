@@ -18,10 +18,7 @@ import { AgmCoreModule } from '@agm/core';
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent,
-    AgmCoreModule.forRoot({
-     apiKey: 'AIzaSyAbfskcTo1rQaXr2260hW3ugtaic2Ho-P8'
-    })
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +28,9 @@ import { AgmCoreModule } from '@agm/core';
     ComponentsModule,
     ExamplesModule,
     AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBq0aO5X8Oyv5z-I5sDDbOeqlcyP3HnTX0'
+     })
   ],
   providers: [],
   bootstrap: [AppComponent]
