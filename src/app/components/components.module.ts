@@ -11,7 +11,7 @@ import { ComponentsComponent } from './components.component';
 import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
-//import { AgmCoreModule } from '@agm/core';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
     imports: [
@@ -20,8 +20,8 @@ import { NgbdModalContent } from './modal/modal.component';
         NgbModule,
         NouisliderModule,
         RouterModule,
-        JwBootstrapSwitchNg2Module
-        //AgmCoreModule
+        JwBootstrapSwitchNg2Module,
+        AgmCoreModule
     ],
     declarations: [
         ComponentsComponent,
