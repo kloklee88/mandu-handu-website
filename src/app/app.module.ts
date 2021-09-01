@@ -10,7 +10,6 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
-import { ExamplesModule } from './examples/examples.module';
 import { AgmCoreModule } from '@agm/core';
 
 
@@ -26,7 +25,6 @@ import { AgmCoreModule } from '@agm/core';
     FormsModule,
     RouterModule,
     ComponentsModule,
-    ExamplesModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBq0aO5X8Oyv5z-I5sDDbOeqlcyP3HnTX0'
