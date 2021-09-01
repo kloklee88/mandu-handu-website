@@ -11,6 +11,9 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
     agm-map {
         height: 500px;
     }
+    .menu-img {
+        margin-top: 30px;
+    }
     `]
 })
 
