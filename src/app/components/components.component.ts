@@ -8,6 +8,9 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
     ngb-progressbar {
         margin-top: 5rem;
     }
+    agm-map {
+        height: 500px;
+    }
     `]
 })
 
@@ -15,15 +18,15 @@ export class ComponentsComponent implements OnInit {
     data: Date = new Date();
 
     // google maps zoom level
-    zoom: number = 4;
+    zoom: number = 15;
 
     // initial center position for the map
-    lat: number = 38.9072;
-    lng: number = -77.0369;
+    lat: number = 40.4406;
+    lng: number = -79.9959;
     markers: marker[] = [
         {
-            lat: 39.1073,
-            lng: -76.5711,
+            lat:  40.4406,
+            lng: -79.9959,
             label: 'MH',
             name: 'Mandu Handu',
             draggable: false

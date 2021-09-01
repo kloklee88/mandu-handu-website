@@ -20,7 +20,7 @@
             </div>
         </div>
         <!-- <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div> -->
-        <h6 class=" category-absolute ml-auto mr-auto">Designed and coded by Kevin Lee
+        <h6 class=" category-absolute ml-auto mr-auto">Designed by Sunni
         </h6>
     </div>
     <div class="main">
@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false"
-                            [zoomControl]="false">
+                            [maxZoom]="zoom" [minZoom]="zoom" [zoomControl]="false">
 
                             <agm-marker *ngFor="let m of markers; let i = index"
                                 (markerClick)="clickedMarker(m.label, i)" [latitude]="m.lat" [longitude]="m.lng"
@@ -48,7 +48,22 @@
                             <section>
                                 <ul>
                                     <li>
-                                        <p>Monday-Saturday: 11am-5pm</p>
+                                        <p>Monday: 11am-5pm</p>
+                                    </li>
+                                    <li>
+                                        <p>Tuesday: 11am-5pm</p>
+                                    </li>
+                                    <li>
+                                        <p>Wednesday: 11am-5pm</p>
+                                    </li>
+                                    <li>
+                                        <p>Thursday: 11am-5pm</p>
+                                    </li>
+                                    <li>
+                                        <p>Friday: 11am-5pm</p>
+                                    </li>
+                                    <li>
+                                        <p>Saturday: 11am-5pm</p>
                                     </li>
                                     <li>
                                         <p>Sunday: 11am-4pm</p>
@@ -88,16 +103,16 @@
                                     started faster.
                                     You can change the text and images and you're good to go.</p>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <ul>
                             <li>
                                 <h4 class="title">MENU ITEM 4</h4>
                                 <p class="description">The kit comes with three pre-built pages to help you get
                                     started faster.
                                     You can change the text and images and you're good to go.</p>
                             </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
                             <li>
                                 <h4 class="title">MENU ITEM 5</h4>
                                 <p class="description">The kit comes with three pre-built pages to help you get
@@ -106,6 +121,18 @@
                             </li>
                             <li>
                                 <h4 class="title">MENU ITEM 6</h4>
+                                <p class="description">The kit comes with three pre-built pages to help you get
+                                    started faster.
+                                    You can change the text and images and you're good to go.</p>
+                            </li>
+                            <li>
+                                <h4 class="title">MENU ITEM 7</h4>
+                                <p class="description">The kit comes with three pre-built pages to help you get
+                                    started faster.
+                                    You can change the text and images and you're good to go.</p>
+                            </li>
+                            <li>
+                                <h4 class="title">MENU ITEM 8</h4>
                                 <p class="description">The kit comes with three pre-built pages to help you get
                                     started faster.
                                     You can change the text and images and you're good to go.</p>

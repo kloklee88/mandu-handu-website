@@ -21,7 +21,9 @@ import { AgmCoreModule } from '@agm/core';
         NouisliderModule,
         RouterModule,
         JwBootstrapSwitchNg2Module,
-        AgmCoreModule
+        AgmCoreModule.forRoot({
+            apiKey: 'AIzaSyBq0aO5X8Oyv5z-I5sDDbOeqlcyP3HnTX0'
+        })
     ],
     declarations: [
         ComponentsComponent,
@@ -31,6 +33,6 @@ import { AgmCoreModule } from '@agm/core';
         NgbdModalContent
     ],
     entryComponents: [NgbdModalContent],
-    exports:[ ComponentsComponent ]
+    exports: [ComponentsComponent]
 })
 export class ComponentsModule { }
